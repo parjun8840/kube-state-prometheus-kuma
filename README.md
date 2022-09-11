@@ -19,7 +19,7 @@ This Helm Chart enables you to instantly push the Kuma Service Mesh metrics from
 
 - **Packaging**
 ```
-$ helm package kube-state-prometheus-kuma
+$ helm package kube-state-metrics-prometheus
 Successfully packaged chart and saved it to: /Users/arjunpandey/Documents/arjun-git/eks-proposed-kuma/kube-state-metrics-prometheus-0.6.0.tgz
 ```
 
