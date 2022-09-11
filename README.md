@@ -12,7 +12,7 @@ This Helm Chart enables you to instantly push the Kuma Service Mesh metrics from
 
 2. It uses image from [kube-state-metrics RED HAT](https://quay.io/repository/coreos/kube-state-metrics)
 
-3. It uses image from [promnetheus Docker Hub](https://hub.docker.com/r/prom/prometheus)
+3. It uses image from [prometheus Docker Hub](https://hub.docker.com/r/prom/prometheus)
 
 4. The installed application will collect metrics exclusivley in **Prometheus** format from a **Kuma Service Mesh** running on **EKS** and pushes to the **AMP**
 
