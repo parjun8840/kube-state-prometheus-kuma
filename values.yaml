@@ -1,0 +1,4 @@
+global:
+  prometheusPort: 9090
+  httpPort: 8080
+  telemetryPort: 8081
