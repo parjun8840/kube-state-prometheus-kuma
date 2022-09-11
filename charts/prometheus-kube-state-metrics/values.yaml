@@ -1,0 +1,33 @@
+replicaCount: 1
+namespaceOverride : mesh-observability
+image:
+  repository: quay.io/coreos/kube-state-metrics
+  pullPolicy: Always
+  tag: v1.9.8
+
+imagePullSecrets: []
+nameOverride: "prometheus"
+fullnameOverride: "prometheus-kube-state-metrics"
+namespace: "mesh-observability"
+service:
+  component: "kube-state-metrics"
+  enabled: true
+  annotations:
+    author: "parjun8840"
+    prometheus.io/scrape: "true"
+  clusterIP: ""
+  externalIPs: []
+  loadBalancerIP: ""
+  type: ""
+  ports:
+    http:
+      port: 80
+      targetPort: 8080
+      protocol: TCP
+    telemetry:
+      port: 81
+      targetPort: 8081
+      protocol: TCP
+podAnnotations: {}
+resources: {}
+nodeSelector: {}
