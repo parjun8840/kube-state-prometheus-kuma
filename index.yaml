@@ -3,7 +3,7 @@ entries:
   kube-state-metrics-prometheus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-14T12:35:31.18278+09:00"
+    created: "2023-01-14T04:23:41.491580357Z"
     dependencies:
     - name: prometheus-kube-state-metrics
       repository: ""
@@ -13,7 +13,7 @@ entries:
       version: 0.1.0
     description: A Helm chart to use AMP with Kubernetes. The core concept of this
       development is to support Kuma but can be used in general.
-    digest: e3de5f496a04230657c5e0ac9f7710d347aa03cfc464d5e70eaa03c4165badd0
+    digest: 05eea868cc641efb981a5d1b899d416bfc814e095ca0af8cdbdb7e974c4c6dbd
     icon: https://www.svgrepo.com/download/8600/helm.svg
     maintainers:
     - email: mailbox.arjun.p@gmail.com
@@ -23,4 +23,4 @@ entries:
     urls:
     - kube-state-metrics-prometheus-0.6.0.tgz
     version: 0.6.0
-generated: "2023-01-14T12:35:31.179827+09:00"
+generated: "2023-01-14T04:23:41.35296184Z"
