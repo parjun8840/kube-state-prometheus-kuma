@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: kube-state-metrics-prometheus
 description: A Helm chart to use AMP with Kubernetes. The core concept of this development is to support Kuma but can be used in general.
 type: application
