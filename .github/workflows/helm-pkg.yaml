@@ -1,0 +1,31 @@
+name: pushing helm package to the github
+on: [push]
+
+jobs:
+  helm-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: download helm
+        run: |
+          wget https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz
+          tar xvf helm-v3.10.3-linux-amd64.tar.gz
+          mv linux-amd64/helm /usr/local/bin
+      - name: list files & folders
+        run: |
+          ls -ltrR
+          pwd
+      - name: helm lint
+        run: helm lint .
+      - name: helm package
+        run: helm package .
+      - name: helm index
+        run: helm repo index .
+      - name: push package
+        run: |
+          git config --global user.email ops-bot@no-reply.com
+          git config --global user.name ops-bot
+          git add -A
+          git commit -m "helm package update"
+          git push origin main
